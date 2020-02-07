@@ -1,1 +1,36 @@
+spring:
+  #thymeleaf模板引擎配置
+  thymeleaf:
+    # 页面默认前缀
+#    prefix: /user/
+    # 响应页面默认后缀
+#    suffix: .html
+    #关闭默认模板引擎
+    cache: false
+#    enabled: false
+
+  #  数据源 druid
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/springBoot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      password: root
+      username: root
+  #编码
+
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  messages:
+    encoding: UTF-8
+banner:
+  charset: UTF-8
+
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
 
