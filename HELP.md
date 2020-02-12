@@ -6,4 +6,4 @@
   
     springboot-thymeleaf-web 采用 Bootstrp 框架 数据渲染采用 Thymeleaf 进行遍历展示 持久层使用Jpa 页面完成CRUD
 
-    SpringCloud基于eurka​​实现feign远程调用与Es简单操作
+    springcloud-es_parent    SpringCloud基于eurka​​实现feign远程调用与Es简单操作
