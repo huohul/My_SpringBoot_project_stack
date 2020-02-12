@@ -18,7 +18,6 @@ spring:
       password: root
       username: root
   #±àÂë
-
   http:
     encoding:
       charset: UTF-8
