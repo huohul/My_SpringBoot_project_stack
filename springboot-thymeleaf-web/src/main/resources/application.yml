@@ -1,15 +1,15 @@
 spring:
-  #thymeleafÄ£°åÒıÇæÅäÖÃ
+  #thymeleafæ¨¡æ¿å¼•æ“é…ç½®
   thymeleaf:
-    # Ò³ÃæÄ¬ÈÏÇ°×º
+    # é¡µé¢é»˜è®¤å‰ç¼€
 #    prefix: /user/
-    # ÏìÓ¦Ò³ÃæÄ¬ÈÏºó×º
-#    suffix: .html
-    #¹Ø±ÕÄ¬ÈÏÄ£°åÒıÇæ
+    # å“åº”é¡µé¢é»˜è®¤åç¼€
+#    suffix: .htmld
+    #å…³é—­é»˜è®¤æ¨¡æ¿å¼•æ“
     cache: false
 #    enabled: false
 
-  #  Êı¾İÔ´ druid
+  #  æ•°æ®æº druid
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -17,7 +17,7 @@ spring:
       url: jdbc:mysql://localhost:3306/springBoot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
       password: root
       username: root
-  #±àÂë
+  #ç¼–ç 
 
   http:
     encoding:
