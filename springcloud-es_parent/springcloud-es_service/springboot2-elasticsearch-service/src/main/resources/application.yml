@@ -1,0 +1,32 @@
+server:
+  port: 8281
+
+spring:
+  banner:
+  charset: utf-8
+  application:
+    name: springboot2-elasticsearch
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+  messages:
+    encoding: UTF-8
+
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-nodes: localhost:9300
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
+
+
+
