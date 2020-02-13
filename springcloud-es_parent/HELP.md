@@ -14,6 +14,7 @@
                        |- springboot2-elasticsearch-service     boot2+Es 参照 G:\IDEAGIt\xuwujing\springBoot-study\springboot2-elasticsearch
                                                                问题较多 不能用当前实体类 查询也是查询不到 慢慢研究吧 内附url 教程
                        |- springboot-search-service            参照 changgou项目 进行 mysql 数据--》 es 的数据导入 
+                       |- springboot-searchquery-service        集成 spring-boot-starter-data-elasticsearch  注入 ElasticsearchTemplate 对 Es库 进行 查 删 更新
                        |- springcloud-es_service_system          MVC&CRUD  接口实现类 就构建查询对象作说明 模糊查询 根据自己业务需求进行修改 注意 【不要有空格】
                   |- springcloud-es_service_api                 pojo  & feign 结口
                        |-springboot2-elasticsearch-service-api        boot2+Es  所需pojo 

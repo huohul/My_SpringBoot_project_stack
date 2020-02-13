@@ -1,5 +1,7 @@
 package com.gxweb.pojo;
 
+import org.springframework.data.elasticsearch.annotations.Document;
+
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
@@ -10,6 +12,7 @@ import java.io.Serializable;
  *
  */
 @Table(name="student")
+@Document(indexName = "stuindex", type = "doc")   //要加,不然报空指针异常
 public class Student implements Serializable {
 
 	@Id

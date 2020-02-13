@@ -28,22 +28,5 @@ public interface EsManageService {
      */
     void importSkuListToES(List<Map> stuList);
 
-    /**
-     * 根据关键字进行全文搜索
-     *
-     * @param searchContent
-     * @return
-     */
-    List<Student> search(String searchContent);
-
-    /**
-     *根据id查询
-     */
-    public Object findById(Integer id);
-
-    /**
-     * 查询所有
-     */
-    Object findAll();
 
 }

@@ -13,12 +13,6 @@
     <artifactId>springboot2-elasticsearch-service</artifactId>
 
     <dependencies>
-        <!-- Spring Boot Elasticsearch 依赖 -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-elasticsearch</artifactId>
-            <version>3.2.3.RELEASE</version>
-        </dependency>
         <!--集合工具包-->
         <dependency>
             <groupId>com.google.guava</groupId>

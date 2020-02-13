@@ -18,6 +18,7 @@
         <module>springcloud-es_common_db</module>
         <module>springcloud-es_service/springboot2-elasticsearch-service</module>
         <module>springcloud-es_service/springboot-search-service</module>
+        <module>springcloud-es_service/springboot-searchquery-service</module>
     </modules>
 
     <parent>

@@ -1,7 +1,6 @@
 package com.gxweb.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.google.common.collect.Lists;
 import com.gxweb.entity.Result;
 import com.gxweb.feign.StuFeign;
 import com.gxweb.pojo.Student;
@@ -13,17 +12,11 @@ import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
-import org.springframework.data.elasticsearch.core.query.*;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static org.elasticsearch.index.query.QueryBuilders.matchAllQuery;
-
 /**
  * @author ： CYQ
  * @date ：Created in 2019/07/14 20:22
@@ -39,8 +32,6 @@ public class EsManageServiceImpl implements EsManageService {
     @Autowired
     private StuFeign stuFeign;  //注入库存Feign  远程调用  查询接口
 
-    @Autowired(required = false)
-    ElasticsearchTemplate elasticsearchTemplate;
 
     /**
      * 查询学生数据
@@ -98,40 +89,6 @@ public class EsManageServiceImpl implements EsManageService {
                 System.out.println("===============导入数据到ES 索引库 失败=============");
             }
         });
-    }
-
-
-    /**
-     * 根据关键字进行全文搜索
-     * @return
-     */
-    @Override
-    public List<Student> search(String searchContent) {
-        return null;
-    }
-
-    /**
-     * 根据id查询
-     * @param id
-     * @return
-     */
-    @Override
-    public Object findById(Integer id) {
-        GetQuery getQuery = new GetQuery();
-        getQuery.setId(id.toString());
-        return elasticsearchTemplate.queryForObject(getQuery, Student.class);
-    }
-
-    /**
-     * 查询所有
-     * @return
-     */
-    @Override
-    public Object findAll() {
-        CriteriaQuery criteriaQuery = new CriteriaQuery(new Criteria());
-        List<Student> students = elasticsearchTemplate.queryForList(criteriaQuery, Student.class);
-        System.out.println(students);
-        return students;
     }
 
 
