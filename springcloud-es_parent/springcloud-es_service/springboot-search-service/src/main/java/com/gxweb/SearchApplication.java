@@ -19,4 +19,5 @@ public class SearchApplication {
         SpringApplication.run(SearchApplication.class);
         System.out.println("启动成功");
     }
+
 }

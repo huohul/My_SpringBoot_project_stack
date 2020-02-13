@@ -12,12 +12,7 @@
     <artifactId>springboot2-elasticsearch-service-api</artifactId>
 
     <dependencies>
-        <!-- Spring Boot Elasticsearch 依赖 -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-elasticsearch</artifactId>
-            <version>3.1.9.RELEASE</version>
-        </dependency>
+
         <dependency>
             <groupId>com.gxweb</groupId>
             <artifactId>springcloud-es_common</artifactId>

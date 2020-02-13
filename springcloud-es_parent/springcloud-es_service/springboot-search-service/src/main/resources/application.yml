@@ -29,7 +29,10 @@ hystrix:
           enabled: false
         isolation:
           strategy: SEMAPHORE
+
 elasticSearch:
+  repositories:
+    enabled: true
   host: 127.0.0.1
   port: 9200
   client:
