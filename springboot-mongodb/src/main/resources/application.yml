@@ -1,0 +1,28 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: article_db
+logging:
+  level:
+    org.springframework.data.mongodb.core: debug
+
+## 配置熔断策略
+#hystrix:
+#  command:
+#    default:
+#      circuitBreaker:
+#        # 强制打开熔断器 默认false关闭的。测试配置是否生效
+#        # forceOpen: false
+#        # 触发熔断错误比例阈值，默认值50%
+#        errorThresholdPercentage: 50
+#        # 熔断后休眠时长，默认值5秒
+#        sleepWindowInMilliseconds: 10000
+#        # 熔断触发最小请求次数，默认值是20
+#        requestVolumeThreshold: 5
+#      execution:
+#        isolation:
+#          thread:
+#            # 熔断超时设置，默认为1秒  访问超过本时间  走熔断 默认兜底
+#            timeoutInMilliseconds: 2000

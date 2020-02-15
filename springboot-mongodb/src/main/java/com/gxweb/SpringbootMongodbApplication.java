@@ -1,0 +1,21 @@
+package com.gxweb;
+
+import cn.hutool.core.lang.Snowflake;
+import cn.hutool.core.util.IdUtil;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+//@EnableHystrixDashboard  //开启服务熔断
+public class SpringbootMongodbApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootMongodbApplication.class, args);
+    }
+    //注入雪花算法 分布式id生成器
+    @Bean
+    public Snowflake snowflake() {
+        return IdUtil.createSnowflake(1, 1);
+    }
+
+}
