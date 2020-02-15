@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq/springboot-rabbitmq.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq/springboot-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot-search-service/springboot-search-service.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot-search-service/springboot-search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot-searchquery-service/springboot-searchquery-service.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot-searchquery-service/springboot-searchquery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-test-async/springboot-test-async.iml" filepath="$PROJECT_DIR$/springboot-test-async/springboot-test-async.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-thymeleaf-web/springboot-thymeleaf-web.iml" filepath="$PROJECT_DIR$/springboot-thymeleaf-web/springboot-thymeleaf-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot2-elasticsearch-service/springboot2-elasticsearch-service.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot2-elasticsearch-service/springboot2-elasticsearch-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service_api/springboot2-elasticsearch-service-api/springboot2-elasticsearch-service-api.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service_api/springboot2-elasticsearch-service-api/springboot2-elasticsearch-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_activemq/springboot_activemq.iml" filepath="$PROJECT_DIR$/springboot_activemq/springboot_activemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_common/springcloud-es_common.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_common/springcloud-es_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_common_db/springcloud-es_common_db.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_common_db/springcloud-es_common_db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_eureka/springcloud-es_eureka.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_eureka/springcloud-es_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_gateway/springcloud-es_gateway.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_gateway/springcloud-es_gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_parent.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springcloud-es_service.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springcloud-es_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service_api/springcloud-es_service_api.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service_api/springcloud-es_service_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springcloud-es_service_system/springcloud-es_service_system.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springcloud-es_service_system/springcloud-es_service_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service_api/springcloud-es_service_system_api/springcloud-es_service_system_api.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service_api/springcloud-es_service_system_api/springcloud-es_service_system_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_web/springcloud-es_web.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_web/springcloud-es_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_web/springcloud-stu-es/springcloud-stu-es.iml" filepath="$PROJECT_DIR$/springcloud-es_parent/springcloud-es_web/springcloud-stu-es/springcloud-stu-es.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
-    <file url="file://$PROJECT_DIR$/springboot-thymeleaf-web" charset="UTF-8" />
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-test-async/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-thymeleaf-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-thymeleaf-web/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/springboot_activemq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot-search-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot-searchquery-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springboot2-elasticsearch-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service/springcloud-es_service_system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service_api/springboot2-elasticsearch-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_service_api/springcloud-es_service_system_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-es_parent/springcloud-es_web/springcloud-stu-es/src/main/java" charset="UTF-8" />
   </component>
 </project>

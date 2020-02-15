@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jms.annotation.EnableJms;
 
 /**
+ * ActiveMQ：基于JMS实现, 比较均衡, 不是最快的, 也不是最稳定的.
+ *
  * https://www.cnblogs.com/elvinle/p/8457596.html
  *
  * 注意启动 activeMQ bat  "E:\Program Files\apache-activemq-5.15.10-bin\apache-activemq-5.15.10\bin\win64"   桌面有快捷方式
