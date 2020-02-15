@@ -1,0 +1,14 @@
+server:
+  port: 8088
+  #context-path: /pro
+spring:
+  activemq:
+    user: admin
+    password: admin
+    broker-url: tcp://127.0.0.1:61616
+    pool:
+      enabled: true
+      max-connections: 10
+
+queueName: publish.queue
+topicName: publish.topic
