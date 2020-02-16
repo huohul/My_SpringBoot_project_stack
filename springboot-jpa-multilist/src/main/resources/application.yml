@@ -1,0 +1,34 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  #thymeleaf模板引擎配置
+  thymeleaf:
+    # 页面默认前缀
+    #    prefix: /user/
+    # 响应页面默认后缀
+    #    suffix: .htmld
+    #关闭默认模板引擎
+    cache: false
+  #    enabled: false
+
+  #  数据源 druid
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/springboot_jpa?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      password: root
+      username: root
+  #配置jpa
+  jpa:
+    #指定DBMS
+    database: mysql
+    #Hibernate DDL Auto（创建，创建，删除，更新）
+    hibernate:
+      ddl-auto: update
+    serialization:
+      indent_output: true
+    show-sql: true
+
