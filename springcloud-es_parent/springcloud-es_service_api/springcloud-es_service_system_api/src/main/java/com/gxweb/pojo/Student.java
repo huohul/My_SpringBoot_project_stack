@@ -12,7 +12,7 @@ import java.io.Serializable;
  *
  */
 @Table(name="student")
-@Document(indexName = "stuindex", type = "doc")   //要加,不然springbot2-elasticsearch 报空指针异常
+@Document(indexName = "stuindex", type = "doc")   //springbot2-elasticsearch 要加,不然 报空指针异常
 public class Student implements Serializable {
 
 	@Id
