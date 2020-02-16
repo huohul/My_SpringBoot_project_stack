@@ -7,6 +7,8 @@
     ## 各 Module 介绍
  Module 名称             ----------------------------------------                 Module 介绍                                                 
 
+    springboot-jpa-multilist            sprngboot 整合jpa 实现自定义查询方法 和 多表链表查询  plus版 
+    
     springboot-mongodb                  springboot 整合mongoDB 实现CRUD          
                                                              
     springboot-rabbitmq                 springboot 整合rebbitMQ  实现四种模式的消息发送与接收        
