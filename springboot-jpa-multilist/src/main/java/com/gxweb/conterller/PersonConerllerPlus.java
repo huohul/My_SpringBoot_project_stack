@@ -91,7 +91,7 @@ public class PersonConerllerPlus {
         List<String> list = null;
         for (int i = 0; i < s.length; i++) {
             System.out.println(s[i]);
-            list = new ArrayList<>(Arrays.asList(personName,s[i]));
+            list = Arrays.asList(personName,s[i]);
         }
         System.out.println(list);
         return personRPlus.filterPersonInfo(list);

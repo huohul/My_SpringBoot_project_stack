@@ -2,15 +2,15 @@ spring:
   task:
     execution:
       pool:
-        # ×î´óÏß³ÌÊı
+        # æœ€å¤§çº¿ç¨‹æ•°
         max-size: 16
-        # ºËĞÄÏß³ÌÊı
+        # æ ¸å¿ƒçº¿ç¨‹æ•°
         core-size: 16
-        # ´æ»îÊ±¼ä
+        # å­˜æ´»æ—¶é—´
         keep-alive: 10s
-        # ¶ÓÁĞ´óĞ¡
+        # é˜Ÿåˆ—å¤§å°
         queue-capacity: 100
-        # ÊÇ·ñÔÊĞíºËĞÄÏß³Ì³¬Ê±
+        # æ˜¯å¦å…è®¸æ ¸å¿ƒçº¿ç¨‹è¶…æ—¶
         allow-core-thread-timeout: true
-      # Ïß³ÌÃû³ÆÇ°×º
+      # çº¿ç¨‹åç§°å‰ç¼€
       thread-name-prefix: async-task-

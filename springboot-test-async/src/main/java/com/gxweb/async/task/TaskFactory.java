@@ -11,13 +11,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * 任务工厂
  *
- * @description: 任务工厂
+ * @description: 任务工厂  需要开启异步注解  @EnableAsync
  * @date: Created in 2018-12-29 10:37
  */
 @Component
 @Slf4j
 public class TaskFactory {
-
     /**
      * 模拟5秒的异步任务
      */
@@ -26,7 +25,6 @@ public class TaskFactory {
         doTask("asyncTask1", 5);
         return new AsyncResult<>(Boolean.TRUE);
     }
-
     /**
      * 模拟2秒的异步任务
      */
@@ -35,7 +33,6 @@ public class TaskFactory {
         doTask("asyncTask2", 2);
         return new AsyncResult<>(Boolean.TRUE);
     }
-
     /**
      * 模拟3秒的异步任务
      */

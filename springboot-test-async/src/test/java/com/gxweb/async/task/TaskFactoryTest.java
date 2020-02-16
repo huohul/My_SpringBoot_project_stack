@@ -36,8 +36,6 @@ public class TaskFactoryTest extends SpringBootDemoAsyncApplicationTests {
         task2.get();
         task3.get();
         long end = System.currentTimeMillis();
-
-
         log.info("异步任务全部执行结束，总耗时：{} 毫秒", (end - start));
     }
 
