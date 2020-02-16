@@ -20,3 +20,19 @@
     springboot_activemq                 实现activeMQ的消息队列 与发布订阅模式
 
     springcloud-es_parent               SpringCloud基于eurka​​实现feign远程调用与Es简单操作
+
+
+    完备的发送邮件 项目 G:\IDEAGIt\SpringBootAndSpringCloud_The_total_stack\spring-boot-demo\spring-boot-demo-email 
+
+    spirngboot 实现过滤器与拦截器 G:\IDEAGIt\Snailclimb\springboot-guide\source-code\basis\springboot-filter-interceptor 内附文档
+
+
+
+
+##获取知识 
+ ####Spring 的 BeanUtils
+      使用spring的BeanUtils进行对象拷贝   
+                    //要保证实体类成员变量相同 
+                    PersonSource personSource = new PersonSource(1, "pjmike", "12345", 21);
+                    PersonDest personDest = new PersonDest();
+                    BeanUtils.copyProperties(personSource,personDest);
