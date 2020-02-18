@@ -7,6 +7,9 @@
     ## 各 Module 介绍
  Module 名称             ----------------------------------------                 Module 介绍                                                 
 
+   
+    springboot-error-handler             统一异常处理
+   
     springboot-jpa-multilist            sprngboot 整合jpa 实现自定义查询方法 和 多表链表查询  plus版 
     
     springboot-mongodb                  springboot 整合mongoDB 实现CRUD          
