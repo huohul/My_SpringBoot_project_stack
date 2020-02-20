@@ -1,7 +1,6 @@
 package com.gxweb.dao;
 
-import com.gxweb.entity.pojo.Person;
-import com.gxweb.entity.pojo.School;
+import com.gxweb.entity.School;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

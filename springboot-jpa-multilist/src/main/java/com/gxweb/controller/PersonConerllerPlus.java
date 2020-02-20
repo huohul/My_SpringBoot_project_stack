@@ -1,8 +1,8 @@
-package com.gxweb.conterller;
+package com.gxweb.controller;
 
 import com.gxweb.dao.PersonRepository;
 import com.gxweb.entity.dto.UserDTO;
-import com.gxweb.entity.pojo.Person;
+import com.gxweb.entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;

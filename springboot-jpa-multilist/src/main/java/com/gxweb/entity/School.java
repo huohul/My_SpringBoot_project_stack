@@ -1,4 +1,4 @@
-package com.gxweb.entity.pojo;
+package com.gxweb.entity;
 
 
 import lombok.AllArgsConstructor;

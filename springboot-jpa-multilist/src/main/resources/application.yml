@@ -3,6 +3,10 @@ server:
   tomcat:
     uri-encoding: UTF-8
 spring:
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
   #thymeleaf模板引擎配置
   thymeleaf:
     # 页面默认前缀
@@ -13,14 +17,20 @@ spring:
     cache: false
   #    enabled: false
 
-  #  数据源 druid
+  #数据源 druid
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    druid:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/springboot_jpa?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
-      password: root
-      username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot_jpa?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+    filters: stat,wall     #druid监控配置
+    dbcp2:
+      min-idle: 5         #数据库连接池的最小维持连接数
+      initial-size: 5     #初始化提供的连接数
+      max-total: 5          #最大的连接数
+      max-wait-millis: 200        #等待连接获取的最大超时时间
+
   #配置jpa
   jpa:
     #指定DBMS

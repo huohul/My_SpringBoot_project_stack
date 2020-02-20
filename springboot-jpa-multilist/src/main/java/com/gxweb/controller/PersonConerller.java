@@ -1,6 +1,6 @@
-package com.gxweb.conterller;
+package com.gxweb.controller;
 
-import com.gxweb.entity.pojo.Person;
+import com.gxweb.entity.Person;
 import com.gxweb.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

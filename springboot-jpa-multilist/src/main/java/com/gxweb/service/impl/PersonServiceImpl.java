@@ -1,7 +1,7 @@
 package com.gxweb.service.impl;
 
 import com.gxweb.dao.PersonRepository;
-import com.gxweb.entity.pojo.Person;
+import com.gxweb.entity.Person;
 import com.gxweb.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

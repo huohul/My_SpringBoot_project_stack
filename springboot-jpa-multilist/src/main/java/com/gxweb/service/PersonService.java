@@ -1,6 +1,6 @@
 package com.gxweb.service;
 
-import com.gxweb.entity.pojo.Person;
+import com.gxweb.entity.Person;
 
 import java.util.List;
 
