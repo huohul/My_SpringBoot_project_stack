@@ -12,7 +12,9 @@
    
     springboot-jpa-multilist            sprngboot 整合jpa 实现自定义查询方法 和 多表链表查询  plus版  + druid 监控配置
     
-    springboot-mongodb                  springboot 整合mongoDB 实现CRUD          
+    springboot-mongodb                  springboot 整合mongoDB 实现CRUD     
+        
+    springboot-multi-datasource-jpa     演示 Spring Boot 如何集成 JPA 的多数据源
                                                              
     springboot-rabbitmq                 springboot 整合rebbitMQ  实现四种模式的消息发送与接收        
     
