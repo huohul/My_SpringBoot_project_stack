@@ -10,7 +10,7 @@
    
     springboot-error-handler             统一异常处理
    
-    springboot-jpa-multilist            sprngboot 整合jpa 实现自定义查询方法 和 多表链表查询  plus版 
+    springboot-jpa-multilist            sprngboot 整合jpa 实现自定义查询方法 和 多表链表查询  plus版  + druid 监控配置
     
     springboot-mongodb                  springboot 整合mongoDB 实现CRUD          
                                                              
@@ -23,6 +23,9 @@
     springboot_activemq                 实现activeMQ的消息队列 与发布订阅模式
 
     springcloud-es_parent               SpringCloud基于eurka​​实现feign远程调用与Es简单操作
+    
+    sprngboot-mydockerfile-docker       使用Dockerfile 对springboot-jpa-multilist 进行镜像制作及部署
+    
 
 
     完备的发送邮件 项目 G:\IDEAGIt\SpringBootAndSpringCloud_The_total_stack\spring-boot-demo\spring-boot-demo-email 
