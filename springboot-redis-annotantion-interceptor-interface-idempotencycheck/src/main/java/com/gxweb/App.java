@@ -19,7 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  *      如果存在, 正常处理业务逻辑, 并从redis中删除此token, 那么, 如果是重复请求, 由于token已被删除, 则不能通过校验, 返回请勿重复操作提示
  *      如果不存在, 说明参数不合法或者是重复请求, 返回提示即可
  *
- *      但是业务 携带token   一次正常访问都不行 ？？？？  卧槽
+ *     自己改造已完成  即每个ip  要进行提交等不可重复操作 都得需要token  可在进入该页面发放token
  */
 
 @SpringBootApplication

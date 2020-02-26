@@ -126,9 +126,7 @@ public class JedisUtil {
         Jedis jedis = null;
         try {
             jedis = getJedis();
-           Boolean j = jedis.exists(key.getBytes());
-//            System.out.println(j);  //false 明明是找到了啊 为何返回false
-            return j;
+            return jedis.exists(key.getBytes());
         } catch (Exception e) {
             log.error("exists key:{} error", key, e);
             return null;
