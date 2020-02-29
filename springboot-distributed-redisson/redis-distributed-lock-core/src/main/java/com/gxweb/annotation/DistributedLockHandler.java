@@ -1,7 +1,7 @@
-package com.gxweb.redisson.annotation;
+package com.gxweb.annotation;
 
 
-import com.gxweb.redisson.RedissonLock;
+import com.gxweb.RedissonLock;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

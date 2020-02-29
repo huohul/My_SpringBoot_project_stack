@@ -1,4 +1,4 @@
-package com.gxweb.redisson.constant;
+package com.gxweb.constant;
 
 /**
  * @desc Redis连接方式

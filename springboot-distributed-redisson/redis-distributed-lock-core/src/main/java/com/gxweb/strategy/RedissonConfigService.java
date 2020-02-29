@@ -1,7 +1,7 @@
-package com.gxweb.redisson.strategy;
+package com.gxweb.strategy;
 
 
-import com.gxweb.redisson.entity.RedissonProperties;
+import com.gxweb.entity.RedissonProperties;
 import org.redisson.config.Config;
 
 /**

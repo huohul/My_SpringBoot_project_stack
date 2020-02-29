@@ -1,4 +1,4 @@
-package com.gxweb.redisson.entity;
+package com.gxweb.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.gxweb.redisson.config.RedissonAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.gxweb.config.RedissonAutoConfiguration

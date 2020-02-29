@@ -1,4 +1,4 @@
-package com.gxweb.redisson.annotation;
+package com.gxweb.annotation;
 
 import java.lang.annotation.*;
 

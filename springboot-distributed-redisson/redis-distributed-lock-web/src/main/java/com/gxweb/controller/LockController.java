@@ -2,21 +2,12 @@ package com.gxweb.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
-import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Snowflake;
-import cn.hutool.core.util.RandomUtil;
-import com.gxweb.redisson.RedissonLock;
-import lombok.extern.slf4j.Slf4j;
+import com.gxweb.RedissonLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.util.unit.DataUnit;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import sun.misc.ThreadGroupUtils;
-
-import java.net.SocketTimeoutException;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author ： CYQ

@@ -1,14 +1,14 @@
-package com.gxweb.redisson;
+package com.gxweb;
 
 import com.google.common.base.Preconditions;
 
-import com.gxweb.redisson.constant.RedisConnectionType;
-import com.gxweb.redisson.entity.RedissonProperties;
-import com.gxweb.redisson.strategy.RedissonConfigService;
-import com.gxweb.redisson.strategy.impl.ClusterConfigImpl;
-import com.gxweb.redisson.strategy.impl.MasterslaveConfigImpl;
-import com.gxweb.redisson.strategy.impl.SentineConfigImpl;
-import com.gxweb.redisson.strategy.impl.StandaloneConfigImpl;
+import com.gxweb.constant.RedisConnectionType;
+import com.gxweb.entity.RedissonProperties;
+import com.gxweb.strategy.RedissonConfigService;
+import com.gxweb.strategy.impl.ClusterConfigImpl;
+import com.gxweb.strategy.impl.MasterslaveConfigImpl;
+import com.gxweb.strategy.impl.SentineConfigImpl;
+import com.gxweb.strategy.impl.StandaloneConfigImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.Redisson;
 import org.redisson.config.Config;

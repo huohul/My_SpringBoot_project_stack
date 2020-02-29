@@ -1,9 +1,9 @@
-package com.gxweb.redisson.strategy.impl;
+package com.gxweb.strategy.impl;
 
 
-import com.gxweb.redisson.constant.GlobalConstant;
-import com.gxweb.redisson.entity.RedissonProperties;
-import com.gxweb.redisson.strategy.RedissonConfigService;
+import com.gxweb.constant.GlobalConstant;
+import com.gxweb.entity.RedissonProperties;
+import com.gxweb.strategy.RedissonConfigService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.redisson.config.Config;

@@ -1,8 +1,8 @@
-package com.gxweb.redisson.config;
+package com.gxweb.config;
 
-import com.gxweb.redisson.RedissonLock;
-import com.gxweb.redisson.RedissonManager;
-import com.gxweb.redisson.entity.RedissonProperties;
+import com.gxweb.RedissonLock;
+import com.gxweb.RedissonManager;
+import com.gxweb.entity.RedissonProperties;
 import org.redisson.Redisson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
