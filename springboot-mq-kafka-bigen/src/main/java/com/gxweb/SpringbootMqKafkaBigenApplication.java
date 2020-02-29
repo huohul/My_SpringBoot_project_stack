@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * springboot + kafka  实现消息订阅 发送接收 与 发送返回值接收
+ *  springboot + kafka  实现消息订阅 发送接收 与 发送返回值接收
  *
  * 配置教程 见 E:\桌面\Linux客户端 kafuka.test
  *      Zookeeper 可视化工具插件  Zoolytic-Zookeeper tool
