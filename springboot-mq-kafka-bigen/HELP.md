@@ -1,16 +1,38 @@
-# Getting Started
+docker简易搭建kafka  
+		https://www.jianshu.com/p/adc4b8350fef
+		
+实战一 ： https://mp.weixin.qq.com/s/tosm_R9-qlipLE2Z50MQ4A
 
-### Reference Documentation
-For further reference, please consider the following sections:
+实战二： https://mp.weixin.qq.com/s/HJ1OPiXF8jbC-qdn1U4z7g
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/maven-plugin/)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications)
 
-### Guides
-The following guides illustrate how to use some features concretely:
+  ###拉取镜像
+  
+        docker pull wurstmeister/zookeeper
+        docker pull wurstmeister/kafka
+        docker pull sheepkiller/kafka-manager
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
+  ###ookeeper
 
+    docker run -d --name zookeeper --publish 2181:2181 \
+      --volume /etc/localtime:/etc/localtime \
+      --restart=always \
+      wurstmeister/zookeeper
+ 
+  ###run kafka
+
+      docker run --name kafka \
+      -p 9092:9092 \
+      --link zookeeper:zookeeper \
+      -e KAFKA_ADVERTISED_HOST_NAME=192.168.2.128 \
+      -e KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181 \
+      -d  wurstmeister/kafka  
+  
+  ###run kafka manager
+
+      docker run -d \
+      --link zookeeper:zookeeper \
+      -p 9000:9000  \
+      -e ZK_HOSTS="zookeeper:2181" \
+      hlebalbau/kafka-manager:stable \
+      -Dpidfile.path=/dev/null
