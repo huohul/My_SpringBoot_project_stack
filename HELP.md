@@ -17,6 +17,8 @@
      springboot-jwt-security                    SpringBoot整合security示例实现权限注解+JWT登录认证
     
     springboot-mongodb                          springboot 整合mongoDB 实现CRUD + 布隆过滤器的案例（Test中）    
+    
+    springboot-mq-kafka-bigen                    springboot + kafka  实现消息订阅 发送接收 与 发送返回值接收
         
     springboot-multi-datasource-jpa             演示 Spring Boot 如何集成 JPA 的多数据源
     
