@@ -8,17 +8,27 @@
  Module 名称             ----------------------------------------                 Module 介绍                                                 
 
    
+    springboot-distributed-redisson             springboot-distributed-redisson Redisson 实现分布式锁 + 多线程
+    
     springboot-error-handler                    统一异常处理
    
     springboot-jpa-multilist                    sprngboot 整合jpa 实现自定义查询方法 和 多表链表查询  plus版  + druid 监控配置
     
-    springboot-mongodb                          springboot 整合mongoDB 实现CRUD     
+     springboot-jwt-security                    SpringBoot整合security示例实现权限注解+JWT登录认证
+    
+    springboot-mongodb                          springboot 整合mongoDB 实现CRUD + 布隆过滤器的案例（Test中）    
         
     springboot-multi-datasource-jpa             演示 Spring Boot 如何集成 JPA 的多数据源
     
-    springboot-multi-datasource-mybatisplus      主要演示了 Spring Boot 如何集成 Mybatis 的多数据源。可以自己基于AOP实现多数据源，
+    springboot-multi-datasource-mybatisplus     主要演示了 Spring Boot 如何集成 Mybatis 的多数据源。可以自己基于AOP实现多数据源，
                                                              
+    springboot-mybatis-swagger2-document-the-export         spirngboot +  swagger2 + 文档导出 内附导出工具类
+    
+    springboot-mybatisplus-anntation            springboot+ mybatisplus  基于注解链表+条件查询
+   
     springboot-rabbitmq                         springboot 整合rebbitMQ  实现四种模式的消息发送与接收        
+    
+    springboot-redis-annotantion-interceptor-interface-idempotencycheck  Spring Boot + Redis + 注解 + 拦截器来实现接口幂等性校验
     
     springboot-sub-db-table-read-write          实现分库分表 ms0 ms1  库 分表   读写分离 还未实现  读数据是从 sl0/1  表中读  数据为从主库中拉取  待以后完善
    
@@ -50,3 +60,19 @@
                     PersonSource personSource = new PersonSource(1, "pjmike", "12345", 21);
                     PersonDest personDest = new PersonDest();
                     BeanUtils.copyProperties(personSource,personDest);
+                    
+      mybatisPlus 
+                根据用户名查询实体
+                 public SysUserEntity selectUserByName(String username) {
+                        QueryWrapper<SysUserEntity> queryWrapper = new QueryWrapper<>();
+                        queryWrapper.lambda().eq(SysUserEntity::getUsername,username);
+                        return this.baseMapper.selectOne(queryWrapper);
+                    }
+                    
+                    
+  ###java葵花宝典
+   [还看不懂同事的代码？超强的 Stream 流操作姿势还不学习一下](https://mp.weixin.qq.com/s/4yJarUD3PhBrxa2Z2RmPag)  ------>  [GitHub地址](https://github.com/niumoo/jdk-feature/blob/master/src/main/java/net/codingme/feature/jdk8/Jdk8Stream.java )
+   
+   [Spring Boot + RabbitMQ发送邮件(保证消息 100% 投递成功并被消费)](https://mp.weixin.qq.com/s/nHmRJLatsvBNP3p3-Tb_7Q) 物理地址： G:\IDEABaiS\2_small_functiona_ items\springboot-wxw
+   
+   [冒着挂科的风险也要给你们看的 Spring Cloud 入门总结](https://mp.weixin.qq.com/s/zu39BPRXotuWm6g3R8Dr8w)
