@@ -1,6 +1,4 @@
 package com.gxweb.controller;
-
-import cn.hutool.core.lang.Snowflake;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gxweb.entity.Person;
 import com.gxweb.service.PersonService;
@@ -73,6 +71,15 @@ public class PersonController {
             }
         }
         return "主从复制成功";
+    }
+    /**
+     *从库查询所有
+     */
+    @GetMapping("/getSalAll")
+    public List<Person> getSalAll() {
+        List<Person> personlist=personService.list();
+        System.out.println(personlist);
+        return personlist;
     }
 
 }
