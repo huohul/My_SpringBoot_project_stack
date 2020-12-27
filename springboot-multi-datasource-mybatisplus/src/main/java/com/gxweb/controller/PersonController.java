@@ -72,6 +72,7 @@ public class PersonController {
         }
         return "主从复制成功";
     }
+
     /**
      *从库查询所有
      */
