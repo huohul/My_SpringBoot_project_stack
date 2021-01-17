@@ -22,7 +22,8 @@ public class PersonConerller {
     private PersonService personService;
 
     @RequestMapping("/hello")
-    public String hello() {
+    public String hello(Model model, String name) {
+        model.addAttribute("name", name);
         return "hello";
     }
 
