@@ -14,7 +14,9 @@
    
     springboot-jpa-multilist                    sprngboot 整合jpa 实现自定义查询方法 和 多表链表查询  plus版  + druid 监控配置
     
-     springboot-jwt-security                    SpringBoot整合security示例实现权限注解+JWT登录认证
+    springboot-jwt-security                    SpringBoot整合security示例实现权限注解+JWT登录认证
+    
+    springboot-mobile-redis                     SpringBoot实战：整合Redis、mybatis，封装RedisUtils工具类等 最后附Jmeter 压测工具
     
     springboot-mongodb                          springboot 整合mongoDB 实现CRUD + 布隆过滤器的案例（Test中）    
     
@@ -26,11 +28,13 @@
                                                              
     springboot-mybatis-swagger2-document-the-export         spirngboot +  swagger2 + 文档导出 内附导出工具类
     
-    springboot-mybatisplus-anntation            springboot+ mybatisplus  基于注解链表+条件查询
+    springboot-mybatisplus-anntation            springboot+ mybatisplus  基于注解链表查询  加入了 index vue结合bootstrap 简单渲染数据 需引入 thymeleaf 依赖
    
     springboot-rabbitmq                         springboot 整合rebbitMQ  实现四种模式的消息发送与接收        
     
     springboot-redis-annotantion-interceptor-interface-idempotencycheck  Spring Boot + Redis + 注解 + 拦截器来实现接口幂等性校验
+    
+    springboot-shiro                            Shiro安全框架【快速入门】就这一篇！  没有跑通  未上传Github
     
     springboot-sub-db-table-read-write          实现分库分表 ms0 ms1  库 分表   读写分离 还未实现  读数据是从 sl0/1  表中读  数据为从主库中拉取  待以后完善
    
@@ -44,7 +48,7 @@
 
     springcloud-es_parent                       SpringCloud基于eurka​​实现feign远程调用与Es简单操作
     
-    sprngboot-mydockerfile-docker               使用Dockerfile 对springboot-jpa-multilist 进行镜像制作及部署
+    sprngboot-mydockerfile-docker               使用Dockerfile 对springboot-jpa-multilist 进行镜像制作及部署  Alibaba Cloud Toolkit 部署
     
     
 
