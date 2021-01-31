@@ -26,6 +26,8 @@
     
     springboot-multi-datasource-mybatisplus     主要演示了 Spring Boot 如何集成 Mybatis 的多数据源。可以自己基于AOP实现多数据源，
                                                              
+    springboot-multi-datasource-mybatisplus-log4j           Springboot + mybatis plus +log4j2 进行分库分表 多数据源 主从复制 日志处理
+    
     springboot-mybatis-swagger2-document-the-export         spirngboot +  swagger2 + 文档导出 内附导出工具类
     
     springboot-mybatisplus-anntation            springboot+ mybatisplus  基于注解链表查询  加入了 index vue结合bootstrap 简单渲染数据 需引入 thymeleaf 依赖
