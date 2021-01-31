@@ -1,4 +1,4 @@
-package com.gxweb.conterller;
+package com.gxweb.controller;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Snowflake;
@@ -42,7 +42,7 @@ public class ArticleConterller {
     private MongoTemplate mongoTemplate;
 
     @Autowired
-    private Snowflake snowflake;
+    private Snowflake snowflake;  //注入雪花分布式id
 
     /**
      * 测试新增
