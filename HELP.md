@@ -7,7 +7,10 @@
     ## 各 Module 介绍
  Module 名称             ----------------------------------------                 Module 介绍                                                 
 
+    springboot-dataway                          Dataway  绝了！这款工具让 Spring Boot 不在需要 Controller、Service、DAO、Mapper 了
    
+    springboot-test-async                       spring-boot 使用原生提供的异步任务支持，实现异步执行任务 + debug 调试技巧  +  十大排序算法
+    
     springboot-distributed-redisson             springboot-distributed-redisson Redisson 实现分布式锁 + 多线程
     
     springboot-error-handler                    统一异常处理
@@ -41,8 +44,6 @@
     springboot-sub-db-table-read-write          实现分库分表 ms0 ms1  库 分表   读写分离 还未实现  读数据是从 sl0/1  表中读  数据为从主库中拉取  待以后完善
    
     springboot-sub-db-table-sharding-jdbc        MybatisPlus集成 sharding-jdbc 实现分库分表操作
-   
-    springboot-test-async                       spring-boot 使用原生提供的异步任务支持，实现异步执行任务
    
     springboot-thymeleaf-web                    采用 Bootstrp 框架 数据渲染采用 Thymeleaf 进行遍历展示 持久层使用Jpa 页面完成CRUD
     
