@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 /**
  * springboot  整合MongoDB  + 布隆过滤器的案例 Test中
+ * MongoDB 最全攻略  https://mp.weixin.qq.com/s/F-NM-NkyZ0iGMF49wwbtbQ
  */
 @SpringBootApplication
 //@EnableHystrixDashboard  //开启服务熔断
