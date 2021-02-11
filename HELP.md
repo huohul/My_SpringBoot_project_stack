@@ -41,6 +41,8 @@
     
     springboot-shiro                            Shiro安全框架【快速入门】就这一篇！  没有跑通  未上传Github
     
+    springboot-Stream                           2万字20个实例解析Java8 Stream，带你玩转集合四大点！+停车场系统
+    
     springboot-sub-db-table-read-write          实现分库分表 ms0 ms1  库 分表   读写分离 还未实现  读数据是从 sl0/1  表中读  数据为从主库中拉取  待以后完善
    
     springboot-sub-db-table-sharding-jdbc        MybatisPlus集成 sharding-jdbc 实现分库分表操作
@@ -78,6 +80,12 @@
                         return this.baseMapper.selectOne(queryWrapper);
                     }
                     
+     
+     MyBatis Plus   分布式id设成策略  springboot-mongodb  也有
+      //TableId为主键注解，value为字段值，type主键ID策略类型
+         @TableId(value = "id", type = IdType.AUTO)
+         private Long id;      
+           
                     
   ###java葵花宝典
    [还看不懂同事的代码？超强的 Stream 流操作姿势还不学习一下](https://mp.weixin.qq.com/s/4yJarUD3PhBrxa2Z2RmPag)  ------>  [GitHub地址](https://github.com/niumoo/jdk-feature/blob/master/src/main/java/net/codingme/feature/jdk8/Jdk8Stream.java )
