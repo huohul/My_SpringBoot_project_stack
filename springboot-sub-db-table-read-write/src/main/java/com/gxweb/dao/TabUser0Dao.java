@@ -2,7 +2,7 @@ package com.gxweb.dao;
 
 import com.gxweb.entity.TabUser0;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 /**

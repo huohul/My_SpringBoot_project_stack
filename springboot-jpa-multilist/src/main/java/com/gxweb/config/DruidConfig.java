@@ -16,6 +16,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 public class DruidConfig {
+
     @Bean
     public ServletRegistrationBean druidServlet() {// 主要实现web监控的配置处理
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(

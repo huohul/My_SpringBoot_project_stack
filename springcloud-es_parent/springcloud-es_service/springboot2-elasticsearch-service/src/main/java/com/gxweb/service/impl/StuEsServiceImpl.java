@@ -1,7 +1,7 @@
 package com.gxweb.service.impl;
 
-import com.gxweb.dao.StuEsDao;
 import com.gxweb.pojo.StudentEsDB;
+import com.gxweb.dao.StuEsDao;
 import com.gxweb.service.StuEsService;
 import com.google.common.collect.Lists;;
 import org.elasticsearch.index.query.QueryBuilders;

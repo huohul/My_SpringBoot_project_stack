@@ -1,32 +1,32 @@
 server:
   port: 8080
 spring:
-  # ÅäÖÃÊı¾İÔ´
+  # é…ç½®æ•°æ®æº
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/sans_security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
-# mybatis-plusÏà¹ØÅäÖÃ
+# mybatis-plusç›¸å…³é…ç½®
 mybatis-plus:
-  # xmlÉ¨Ãè£¬¶à¸öÄ¿Â¼ÓÃ¶ººÅ»òÕß·ÖºÅ·Ö¸ô£¨¸æËß Mapper Ëù¶ÔÓ¦µÄ XML ÎÄ¼şÎ»ÖÃ£©
+  # xmlæ‰«æï¼Œå¤šä¸ªç›®å½•ç”¨é€—å·æˆ–è€…åˆ†å·åˆ†éš”ï¼ˆå‘Šè¯‰ Mapper æ‰€å¯¹åº”çš„ XML æ–‡ä»¶ä½ç½®ï¼‰
   mapper-locations: classpath:mapper/*.xml
-  #ÊµÌåÉ¨Ãè£¬¶à¸öpackageÓÃ¶ººÅ»òÕß·ÖºÅ·Ö¸ô
-  typeAliasesPackage:
-  # ÒÔÏÂÅäÖÃ¾ùÓĞÄ¬ÈÏÖµ,¿ÉÒÔ²»ÉèÖÃ
+  #å®ä½“æ‰«æï¼Œå¤šä¸ªpackageç”¨é€—å·æˆ–è€…åˆ†å·åˆ†éš”
+  typeAliasesPackage: com.gxweb.entity
+  # ä»¥ä¸‹é…ç½®å‡æœ‰é»˜è®¤å€¼,å¯ä»¥ä¸è®¾ç½®
   global-config:
     db-config:
-      #Ö÷¼üÀàĞÍ AUTO:"Êı¾İ¿âID×ÔÔö" INPUT:"ÓÃ»§ÊäÈëID",ID_WORKER:"È«¾ÖÎ¨Ò»ID (Êı×ÖÀàĞÍÎ¨Ò»ID)", UUID:"È«¾ÖÎ¨Ò»ID UUID";
+      #ä¸»é”®ç±»å‹ AUTO:"æ•°æ®åº“IDè‡ªå¢" INPUT:"ç”¨æˆ·è¾“å…¥ID",ID_WORKER:"å…¨å±€å”¯ä¸€ID (æ•°å­—ç±»å‹å”¯ä¸€ID)", UUID:"å…¨å±€å”¯ä¸€ID UUID";
       id-type: auto
-      #×Ö¶Î²ßÂÔ IGNORED:"ºöÂÔÅĞ¶Ï"  NOT_NULL:"·Ç NULL ÅĞ¶Ï")  NOT_EMPTY:"·Ç¿ÕÅĞ¶Ï"
+      #å­—æ®µç­–ç•¥ IGNORED:"å¿½ç•¥åˆ¤æ–­"  NOT_NULL:"é NULL åˆ¤æ–­")  NOT_EMPTY:"éç©ºåˆ¤æ–­"
       field-strategy: NOT_EMPTY
-      #Êı¾İ¿âÀàĞÍ
+      #æ•°æ®åº“ç±»å‹
       db-type: MYSQL
   configuration:
-    # ÊÇ·ñ¿ªÆô×Ô¶¯ÍÕ·åÃüÃû¹æÔòÓ³Éä:´ÓÊı¾İ¿âÁĞÃûµ½JavaÊôĞÔÍÕ·åÃüÃûµÄÀàËÆÓ³Éä
+    # æ˜¯å¦å¼€å¯è‡ªåŠ¨é©¼å³°å‘½åè§„åˆ™æ˜ å°„:ä»æ•°æ®åº“åˆ—ååˆ°Javaå±æ€§é©¼å³°å‘½åçš„ç±»ä¼¼æ˜ å°„
     map-underscore-to-camel-case: true
-    # ·µ»ØmapÊ±true:µ±²éÑ¯Êı¾İÎª¿ÕÊ±×Ö¶Î·µ»ØÎªnull,false:²»¼ÓÕâ¸ö²éÑ¯Êı¾İÎª¿ÕÊ±£¬×Ö¶Î½«±»Òş²Ø
+    # è¿”å›mapæ—¶true:å½“æŸ¥è¯¢æ•°æ®ä¸ºç©ºæ—¶å­—æ®µè¿”å›ä¸ºnull,false:ä¸åŠ è¿™ä¸ªæŸ¥è¯¢æ•°æ®ä¸ºç©ºæ—¶ï¼Œå­—æ®µå°†è¢«éšè—
     call-setters-on-nulls: true
-    # Õâ¸öÅäÖÃ»á½«Ö´ĞĞµÄsql´òÓ¡³öÀ´£¬ÔÚ¿ª·¢»ò²âÊÔµÄÊ±ºò¿ÉÒÔÓÃ
+    # è¿™ä¸ªé…ç½®ä¼šå°†æ‰§è¡Œçš„sqlæ‰“å°å‡ºæ¥ï¼Œåœ¨å¼€å‘æˆ–æµ‹è¯•çš„æ—¶å€™å¯ä»¥ç”¨
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

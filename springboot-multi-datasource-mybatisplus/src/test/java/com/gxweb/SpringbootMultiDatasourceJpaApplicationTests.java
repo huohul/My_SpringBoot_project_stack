@@ -1,6 +1,5 @@
 package com.gxweb;
 
-import com.gxweb.entity.Person;
 import com.gxweb.entity.User;
 import com.gxweb.service.PersonService;
 import com.gxweb.service.UserService;

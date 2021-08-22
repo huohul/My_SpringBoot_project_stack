@@ -2,7 +2,6 @@ package com.gxweb.service.impl;
 
 import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.gxweb.entity.Person;
 import com.gxweb.entity.User;
 import com.gxweb.mapper.UserMapper;
 import com.gxweb.service.UserService;

@@ -8,6 +8,7 @@ package com.gxweb.entity;
  *
  */
 public class ErrorInfo {
+
     private String time;//发生时间
     private String url;//访问Url
     private String error;//错误类型

@@ -1,6 +1,7 @@
 package com.gxweb.service;
 
 import com.gxweb.entity.User;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 
@@ -44,5 +45,11 @@ public interface UserService {
      * @return
      */
     List<User> findAll();
+
+    // 普通分页
+    Page<User> getPage(Integer pageNum, Integer pageLimit);
+
+    // 排序分页
+    Page<User> getPageSort(Integer pageNum, Integer pageLimit);
 
 }

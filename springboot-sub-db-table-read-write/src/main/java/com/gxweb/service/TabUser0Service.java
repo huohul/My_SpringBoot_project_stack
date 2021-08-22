@@ -2,7 +2,6 @@ package com.gxweb.service;
 
 import com.gxweb.entity.TabUser0;
 
-import java.awt.print.Pageable;
 import java.util.List;
 
 /**

@@ -1,7 +1,7 @@
 server:
   port: 8083
 spring:
-  # jacksonÊ±¼ä¸ñÊ½»¯
+  # jacksonæ—¶é—´æ ¼å¼åŒ–
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss

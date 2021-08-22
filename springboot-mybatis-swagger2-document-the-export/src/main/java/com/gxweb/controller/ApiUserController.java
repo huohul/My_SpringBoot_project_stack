@@ -1,14 +1,11 @@
 package com.gxweb.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
 import com.gxweb.dao.UserDao;
 import com.gxweb.entity.SwaggerUserEntity;
 import io.swagger.annotations.*;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

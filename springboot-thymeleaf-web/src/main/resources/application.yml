@@ -1,35 +1,44 @@
-spring:
-  #thymeleafģ����������
-  thymeleaf:
-    # ҳ��Ĭ��ǰ׺
-#    prefix: /user/
-    # ��Ӧҳ��Ĭ�Ϻ�׺
-#    suffix: .htmld
-    #�ر�Ĭ��ģ������
-    cache: false
-#    enabled: false
-
-  #  ����Դ druid
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    druid:
-      driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/springBoot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
-      password: root
-      username: root
-  #����
-  http:
-    encoding:
-      charset: UTF-8
-      enabled: true
-      force: true
-  messages:
-    encoding: UTF-8
-banner:
-  charset: UTF-8
-
 server:
   port: 8080
   tomcat:
     uri-encoding: UTF-8
+spring:
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  #thymeleaf模板引擎配置
+  thymeleaf:
+    # 页面默认前缀
+    #    prefix: /user/
+    # 响应页面默认后缀
+    #    suffix: .htmld
+    #关闭默认模板引擎
+    cache: false
+  #    enabled: false
+
+  #数据源 druid
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+    filters: stat,wall     #druid监控配置
+    dbcp2:
+      min-idle: 5         #数据库连接池的最小维持连接数
+      initial-size: 5     #初始化提供的连接数
+      max-total: 5          #最大的连接数
+      max-wait-millis: 200        #等待连接获取的最大超时时间
+
+  #配置jpa
+  jpa:
+    #指定DBMS
+    database: mysql
+    #Hibernate DDL Auto（创建，创建，删除，更新）
+    hibernate:
+      ddl-auto: update
+    serialization:
+      indent_output: true
+    show-sql: true
 

@@ -1,8 +1,8 @@
 package com.gxweb.controller;
 
 import com.gxweb.dao.PersonRepository;
-import com.gxweb.entity.Person;
 import com.gxweb.entity.dto.UserDTO;
+import com.gxweb.entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

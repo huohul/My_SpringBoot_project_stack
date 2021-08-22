@@ -1,7 +1,6 @@
 package com.gxweb.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.gxweb.entity.Person;
 import com.gxweb.entity.User;
 
 /**

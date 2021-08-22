@@ -5,6 +5,8 @@ SpringBoot整合security示例实现权限注解+JWT登录认证(数据库中测
 
 相关文章请移步到:  https://juejin.im/post/5da82f066fb9a04e2a73daec
 
+还有一版： https://mp.weixin.qq.com/s/FTxVaFCkiroW7qFc0lEtzA 注释多
+
 SpringBoot版本:2.1.6
 
 SpringSecurity版本: 5.1.5

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.gxweb.dao.TabUser0Dao">
 
-    <resultMap id="BaseResultMap" type="com.gxweb.entity.TabUser0">
+    <resultMap id="BaseResultMap" type="com.gxweb.com.gxweb.redisson.entity.TabUser0">
         <id column="id" jdbcType="BIGINT" property="id" />
         <result column="name" jdbcType="VARCHAR" property="name" />
         <result column="sex" jdbcType="VARCHAR" property="sex" />
