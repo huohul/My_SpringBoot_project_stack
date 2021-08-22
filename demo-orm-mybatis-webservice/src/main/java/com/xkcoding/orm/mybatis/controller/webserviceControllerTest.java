@@ -1,7 +1,12 @@
 package com.xkcoding.orm.mybatis.controller;
 
+import com.xkcoding.orm.mybatis.mapper.UserMapper;
 import com.xkcoding.orm.mybatis.wsdl.User;
 import com.xkcoding.orm.mybatis.wsdl.WeatherServiceImpl;
+import org.apache.ibatis.cursor.Cursor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,6 +25,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/public/common/")
 public class webserviceControllerTest {
+    @Autowired
+    private UserMapper userMapper;
 
     @RequestMapping("/getAll")
     public Object getAll() {
@@ -40,5 +47,19 @@ public class webserviceControllerTest {
         }
         return allWebServiceInface;
 
+    }
+
+    //http://localhost:8080/public/common/foo/scan/1
+    @RequestMapping("/foo/scan/{limit}")
+    @Transactional
+    public void scanFoo(@PathVariable("limit") Integer limit) {
+        try (Cursor<com.xkcoding.orm.mybatis.entity.User> cursor = userMapper.scan(limit)) {
+            cursor.forEach(foo -> {
+                System.out.println("foo:" + foo + "\n");
+                System.out.println("result:" + getAll() + "\n");
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

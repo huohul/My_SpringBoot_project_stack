@@ -4,6 +4,7 @@ import com.xkcoding.orm.mybatis.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.cursor.Cursor;
 
 import java.util.List;
 
@@ -26,6 +27,15 @@ public interface UserMapper {
      */
     @Select("SELECT * FROM orm_user")
     List<User> selectAllUser();
+
+    /**
+     * 大数量量查询 内存不足 避免OOM
+     *
+     * @param limit
+     * @return
+     */
+    @Select("select * from orm_user limit #{limit}")
+    Cursor<User> scan(@Param("limit") Integer limit);
 
     /**
      * 根据id查询用户
