@@ -1,6 +1,6 @@
 package com.gxweb.system.controller;
-import com.gxweb.entity.Result;
 import com.gxweb.entity.StatusCode;
+import com.gxweb.entity.Result;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

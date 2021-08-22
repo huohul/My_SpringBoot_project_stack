@@ -1,12 +1,13 @@
 package com.gxweb.system.controller;
+import com.gxweb.entity.StatusCode;
+import com.gxweb.pojo.User;
 import com.gxweb.entity.PageResult;
 import com.gxweb.entity.Result;
-import com.gxweb.entity.StatusCode;
 import com.gxweb.system.service.UserService;
-import com.gxweb.pojo.User;
 import com.github.pagehelper.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 import java.util.Map;
 @RestController

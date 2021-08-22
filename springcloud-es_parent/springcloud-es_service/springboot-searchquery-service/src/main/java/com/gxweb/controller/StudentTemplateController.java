@@ -1,4 +1,4 @@
-package com.gxweb.conterller;
+package com.gxweb.controller;
 
 import com.gxweb.dto.StudentDTO;
 import com.gxweb.pojo.Student;
@@ -50,10 +50,9 @@ public class StudentTemplateController {
      * 查询所有 要传参数 模糊查询  默认限定10条数 比较少
      * http://localhost:9010/temp/product/?searchSourch=湖北
      * http://localhost:9010/temp/product/?searchSourch=湖北&size=400
-     *
      */
     @GetMapping
-    public Object findAll(String searchSourch, @PageableDefault Pageable pageable)  {
+    public Object findAll(String searchSourch, @PageableDefault Pageable pageable) {
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 .withQuery(QueryBuilders.queryStringQuery(searchSourch)).withPageable(pageable).build();
         return elasticsearchTemplate.queryForList(searchQuery, Student.class);
@@ -99,13 +98,14 @@ public class StudentTemplateController {
 
     /**
      * 根据名称查询
-     *      模糊查询   有效
-     * @param name   参数
-     * @param pageable  size  可指定条数 不带查询所有
+     * 模糊查询   有效
+     *
+     * @param name     参数
+     * @param pageable size  可指定条数 不带查询所有
      * @return
      */
     @GetMapping("/find-by-name")
-    public Object findByName(@RequestParam String name , @PageableDefault Pageable pageable) {
+    public Object findByName(@RequestParam String name, @PageableDefault Pageable pageable) {
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 .withQuery(matchQuery("name", name)).build();
         return elasticsearchTemplate.queryForList(searchQuery, Student.class);
@@ -137,8 +137,8 @@ public class StudentTemplateController {
         String[] include = {"id",
                 "classAndGrade", "candidateNumber", "name",
                 "sex", "nameOfMajor", "ethnic",
-                "politicsStatus", "patch","sourceProvinces",
-                "areaCountyCityStates","admissionToTheProvince","theSource"};
+                "politicsStatus", "patch", "sourceProvinces",
+                "areaCountyCityStates", "admissionToTheProvince", "theSource"};
 
         FetchSourceFilter fetchSourceFilter = new FetchSourceFilter(include, null);   //两个参数分别是要显示的和不显示的
 
@@ -165,7 +165,7 @@ public class StudentTemplateController {
 
     /**
      * filter查询
-     *
+     * <p>
      * filed : name
      * filedName : 王
      * rangeName : sex
