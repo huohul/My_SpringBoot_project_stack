@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.cursor.Cursor;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -16,8 +17,8 @@ import java.util.List;
  * @author yangkai.shen
  * @date Created in 2018-11-08 10:54
  */
+@Component
 @Mapper
-
 public interface UserMapper {
 
     /**

@@ -14,6 +14,7 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,6 +26,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/public/common/")
 public class webserviceControllerTest {
+
     @Autowired
     private UserMapper userMapper;
 
@@ -53,11 +55,14 @@ public class webserviceControllerTest {
     @RequestMapping("/foo/scan/{limit}")
     @Transactional
     public void scanFoo(@PathVariable("limit") Integer limit) {
+        List<com.xkcoding.orm.mybatis.entity.User> list = new ArrayList<>();
         try (Cursor<com.xkcoding.orm.mybatis.entity.User> cursor = userMapper.scan(limit)) {
             cursor.forEach(foo -> {
                 System.out.println("foo:" + foo + "\n");
                 System.out.println("result:" + getAll() + "\n");
+                list.add(foo);
             });
+            System.out.println(list.size() + "---" + list.get(0));
         } catch (Exception e) {
             e.printStackTrace();
         }
