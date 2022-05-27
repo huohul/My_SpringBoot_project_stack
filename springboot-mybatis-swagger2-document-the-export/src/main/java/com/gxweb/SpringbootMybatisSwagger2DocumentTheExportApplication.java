@@ -2,6 +2,7 @@ package com.gxweb;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +19,11 @@ import org.springframework.context.annotation.Bean;
 public class SpringbootMybatisSwagger2DocumentTheExportApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootMybatisSwagger2DocumentTheExportApplication.class, args);
+        SpringApplication springApplication = new SpringApplication(SpringbootMybatisSwagger2DocumentTheExportApplication.class);
+        //Banner.Mode.OFF 关闭
+        springApplication.setBannerMode(Banner.Mode.CONSOLE);
+        springApplication.run(args);
+        System.err.println("SpringbootMybatisSwagger2DocumentTheExportApplicationqi启动成功");
     }
 
     /**

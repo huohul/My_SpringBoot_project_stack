@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href="/css/bootstrap.css" rel="stylesheet"/>
+    <script src="/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <div class="jumbotron">
+        <p align="center">hello world</p>
+    </div>
+    <hr/>
+    <table border="1px" class="table table-hover" width="300px">
+        <tr>
+            <td>id</td>
+            <td>用戶名</td>
+            <td>密碼</td>
+            <td>状态</td>
+
+        </tr>
+        <tr v-for="user in setmealList">
+            <td>{{user.userId}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.status}}</td>
+        </tr>
+    </table>
+
+</div>
+<script src="/js/vue-v2.6.10.js" type="text/javascript"></script>
+<script src="/js/axios-0.18.0.js"></script>
+<script>
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            setmealList: []
+        },
+        mounted() {
+            axios.post("/user/selectList?status=NORMAL").then((response) => {
+                if (response.data != null) {
+                    this.setmealList = response.data;
+                }
+            });
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -8,18 +8,6 @@
     <artifactId>springcloud-es_parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>springcloud-es_eureka</module>
-        <module>springcloud-es_gateway</module>
-        <module>springcloud-es_service</module>
-        <module>springcloud-es_service_api</module>
-        <module>springcloud-es_web</module>
-        <module>springcloud-es_common</module>
-        <module>springcloud-es_common_db</module>
-        <module>springcloud-es_service/springboot2-elasticsearch-service</module>
-        <module>springcloud-es_service/springboot-search-service</module>
-        <module>springcloud-es_service/springboot-searchquery-service</module>
-    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -1,0 +1,16 @@
+#spring:
+###redis
+##  redis:
+##    host: 127.0.0.1
+##    port: 6379
+##    jedis:
+##      pool:
+##        #连接池中的最大的等待数量
+##        max-idle: 8
+##        #链接的最大等待时间ms
+##        max-wait: 3000
+##        min-idle: 0
+##    timeout: 0
+##    password:
+##server:
+##  port: 8080
