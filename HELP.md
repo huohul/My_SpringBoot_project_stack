@@ -5,7 +5,7 @@
   下载链接： git@github.com:huohul/My_SpringBoot_project_stack.git
   
     ## 各 Module 介绍
- Module 名称             ----------------------------------------                 Module 介绍                                                 
+ Module 名称            ----------------------------------------                 Module 介绍                                                 
 
    
     springboot-distributed-redisson             springboot-distributed-redisson Redisson 实现分布式锁 + 多线程
