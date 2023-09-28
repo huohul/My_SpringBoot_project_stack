@@ -80,3 +80,5 @@
    [Spring Boot + RabbitMQ发送邮件(保证消息 100% 投递成功并被消费)](https://mp.weixin.qq.com/s/nHmRJLatsvBNP3p3-Tb_7Q) 物理地址： G:\IDEABaiS\2_small_functiona_ items\springboot-wxw
    
    [冒着挂科的风险也要给你们看的 Spring Cloud 入门总结](https://mp.weixin.qq.com/s/zu39BPRXotuWm6g3R8Dr8w)
+   
+   2023年9月28日16:30:18
