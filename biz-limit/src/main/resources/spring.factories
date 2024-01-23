@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.cmcc.iot.aop.SemaphoreLimiterAop,\
+  com.cmcc.iot.aop.GuavaLimiterAop,\
+  com.cmcc.iot.aop.SemaphoreLimiterAop
