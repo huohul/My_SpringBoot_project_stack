@@ -1,8 +1,14 @@
 # Redis配置
+#spring:
+#  redis:
+#    host: 172.21.33.60
+#    port: 6381
+#    password:
 spring:
   redis:
-    host: 172.21.33.60
-    port: 6381
-    password: REDIS2020
+    cluster:
+      nodes: 172.21.33.60:6381
+    password:
+    database: 0
 server:
   port: 80
