@@ -7,6 +7,9 @@
     ## 各 Module 介绍
  Module 名称            ----------------------------------------                 Module 介绍                                                 
 
+    biz-limit                                   spring-aop  4种切面限流 + redis 重复请求防刷
+    
+    design-pattern-applying                     设计模式应用  策略模式 责任链模式
    
     springboot-distributed-redisson             springboot-distributed-redisson Redisson 实现分布式锁 + 多线程
     
@@ -34,9 +37,11 @@
     
     springboot-shiro                            Shiro安全框架【快速入门】就这一篇！  没有跑通  未上传Github
     
+    springboot-sub-db-table-aop                 Spring AOP + 自定义注解 + 动态数据源 实现主从库切换&读写分离
+    
     springboot-sub-db-table-read-write          实现分库分表 ms0 ms1  库 分表   读写分离 还未实现  读数据是从 sl0/1  表中读  数据为从主库中拉取  待以后完善
    
-    springboot-sub-db-table-sharding-jdbc        MybatisPlus集成 sharding-jdbc 实现分库分表操作
+    springboot-sub-db-table-sharding-jdbc       MybatisPlus集成 sharding-jdbc 实现分库分表操作
    
     springboot-test-async                       spring-boot 使用原生提供的异步任务支持，实现异步执行任务
    
