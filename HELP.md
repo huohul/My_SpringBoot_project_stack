@@ -31,6 +31,8 @@
     
     springboot-mybatisplus-anntation            springboot+ mybatisplus  基于注解链表查询  加入了 index vue结合bootstrap 简单渲染数据 需引入 thymeleaf 依赖
    
+    springboot-pgsql-multi-level-cache-demo     springboot 整合postgresSql+ Caffeine + Redis  多级缓存
+    
     springboot-rabbitmq                         springboot 整合rebbitMQ  实现四种模式的消息发送与接收        
     
     springboot-redis-annotantion-interceptor-interface-idempotencycheck  Spring Boot + Redis + 注解 + 拦截器来实现接口幂等性校验
