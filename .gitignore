@@ -1,0 +1,34 @@
+*/target/
+
+#IDEA#
+*.iml
+.idea/
+
+#eclipse#
+.classpath
+.project
+.factorypath
+.springBeans
+.settings/
+.metadata/
+Servers/
+
+##class file##
+*.class
+
+# compression file
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.via
+*.tmp
+*.err
+*.exe
+
+# AI/LLM generated files
+*.md

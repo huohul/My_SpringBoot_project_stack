@@ -1,0 +1,51 @@
+spring:
+  # 数据源配置（数据库名：netopen，适配PostgreSQL）
+  datasource:
+    url: jdbc:postgresql://localhost:5432/netopen  # 核心修改：数据库名替换为 netopen
+    username: postgres  # PostgreSQL 默认用户名（可根据你的实际配置修改）
+    password: postgres  # PostgreSQL 默认密码（可根据你的实际配置修改）
+    driver-class-name: org.postgresql.Driver  # PostgreSQL 驱动类
+  # JPA 配置（适配PostgreSQL，指定方言优化SQL生成）
+  jpa:
+    hibernate:
+      ddl-auto: update  # 生产环境建议改为 none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect  # PostgreSQL 方言
+  # Redis 配置保持不变
+  redis:
+    # 纯单机 Redis 配置，无任何集群相关项
+    host: 172.21.43.68    # 本地 Redis 地址，确保 Redis 单机启动
+    port: 6379         # Redis 默认端口
+    password: "chRdw@redis"       # 无密码留空，有密码填实际值（如 123456）
+    timeout: 3000ms    # 连接超时时间
+    lettuce:
+      pool:
+        max-active: 8  # 连接池最大连接数
+        max-idle: 8    # 最大空闲连接
+        min-idle: 2    # 最小空闲连接
+
+# 缓存配置、服务端口、监控配置均保持不变
+cache:
+  caffeine:
+    initial-capacity: 100
+    maximum-size: 1000
+    expire-after-write: 10m
+    expire-after-access: 5m
+  redis:
+    default-expire: 1800
+    cache-prefix: "multilevel:"
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  metrics:
+    tags:
+      application: multi-level-cache-demo
